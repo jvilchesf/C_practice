@@ -18,6 +18,11 @@ int main(){
     printf("Enter a number:");
     scanf("%d", &input);
 
+    /* Make input positive if it's negative */
+    if (input < 0) {
+        input = -input;
+    }
+
     if (input >= 0 && input < 10){
         printf("Number has 1 digit\n");
     }
